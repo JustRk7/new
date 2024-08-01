@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.product:first-child{
+    margin-top: 24px;
+}
+
+.product:last-child{
+    margin-top: 92px;
+}
+
+
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-details {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.service {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+
+
+.service p {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Медіа-запити для адаптивного дизайну */
+
+/* Великі екрани (ширина більше 1200px) */
+@media (min-width: 1200px) {
+    .product {
+        width: 30%;
+    }
+
+    .service {
+        width: 20%;
+    }
+}
+
+/* Середні екрани (ширина від 992px до 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .product {
+        width: 45%;
+    }
+
+    .service {
+        width: 30%;
+    }
+}
+
+/* Планшети (ширина від 768px до 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .product {
+        width: 45%;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Малі екрани (ширина від 576px до 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .product {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Дуже малі екрани (ширина до 575.98px) */
+@media (max-width: 575.98px) {
+    .product {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
